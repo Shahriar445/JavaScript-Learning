@@ -46,7 +46,28 @@ const person4 = {
     }
   };
 
-  person4.name=function(){
-    return (this.firstName +" "+ this.lastName).toUpperCase();
+
+ // Create an Object
+const persons = {
+    name: "John",
+    age: 30,
+    city: "New York"
   };
-  console.log(person4)
+  
+  // show in a loop 
+
+  let view = "";
+
+  for (let x in persons)
+    {
+        view+=persons[x]+ " ";
+    }
+
+
+  // Display Properties
+  document.getElementById("demo").innerHTML = view;
+
+  // Conver js object to json 
+
+  let stringJson = JSON.stringify(persons);
+  document.getElementById('test').innerHTML=stringJson;
