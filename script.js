@@ -71,3 +71,16 @@ const persons = {
 
   let stringJson = JSON.stringify(persons);
   document.getElementById('test').innerHTML=stringJson;
+
+  // object constructore 
+
+  function PersonCons(first,last,age,eye){
+    this.firstName=first;
+    this.lastName=last;
+    this.age=age;
+    this.eye=eye;
+  }
+
+  const myfather=new PersonCons("jon","doer",34,"blue");
+  const mymother = new PersonCons("sa","fal",30  )
+  document.getElementById("test2").innerHTML=myf;
