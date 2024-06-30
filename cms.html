@@ -1,0 +1,168 @@
+<!-- port-management-system.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Management System</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+  <style>
+    /* CSS styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+   .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+   .nav-bar {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+   .nav-bar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+    }
+   .nav-bar a:hover {
+      background-color: #555;
+    }
+   .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+   .card {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px);
+    }
+   .card h2 {
+      margin-top: 0;
+    }
+   .vessel-list {
+      padding: 20px;
+    }
+   .vessel-list table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+   .vessel-list th,.vessel-list td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+   .vessel-list th {
+      background-color: #f0f0f0;
+    }
+   .container-list {
+      padding: 20px;
+    }
+   .container-list table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+   .container-list th,.container-list td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+   .container-list th {
+      background-color: #f0f0f0;
+    }
+    @media (max-width: 768px) {
+     .card {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+     .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML content -->
+  <header class="header">
+    <h1>Port Management System</h1>
+  </header>
+  <nav class="nav-bar">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#vessels">Vessels</a>
+    <a href="#containers">Containers</a>
+    <a href="#reports">Reports</a>
+  </nav>
+  <div class="main-content">
+    <div class="card" id="dashboard">
+      <h2>Dashboard</h2>
+      <p>10 vessels in port, 5 vessels arriving today</p>
+    </div>
+    <div class="card">
+      <h2>Vessel Traffic</h2>
+      <p>500 containers in storage, 200 containers in transit</p>
+    </div>
+    <div class="card">
+      <h2>Port Statistics</h2>
+      <p>100,000 tons of cargo handled last month</p>
+    </div>
+    <div class="vessel-list" id="vessels">
+      <h2>Vessels</h2>
+      <table>
+        <tr>
+          <th>Vessel Name</th>
+          <th>Arrival Time</th>
+          <th>Departure Time</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>MSC Emma</td>
+          <td>2023-02-10 08:00</td>
+          <td>2023-02-12 18:00</td>
+          <td>In Port</td>
+        </tr>
+        <tr>
+          <td>Maersk Sofia</td>
+          <td>2023-02-11 10:00</td>
+          <td>2023-02-13 20:00</td>
+          <td>In Transit</td>
+        </tr>
+        <!-- add morevessels here -->
+      </table>
+    </div>
+    <div class="container-list" id="containers">
+      <h2>Containers</h2>
+      <table>
+        <tr>
+          <th>Container ID</th>
+          <th>Vessel Name</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>CNT123456</td>
+          <td>MSC Emma</td>
+          <td>In Storage</td>
+        </tr>
+        <!-- add more containers here -->
+      </table>
+    </div>
+  </div>
+
+  <!-- JavaScript code -->
+  <script>
+    // JavaScript code
+    // You can add JavaScript code here to interact with the dashboard
+    // For example, you can use JavaScript to fetch data from a database
+    // and update the dashboard in real-time
+  </script>
+</body>
+</html>

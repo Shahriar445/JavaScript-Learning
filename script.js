@@ -271,9 +271,10 @@ let x34= sum(2,3,4,5,6);// as you want pass parameter
 console.log(x34)
 
 
+// function call methods 
 
 const prsn={
-    fullName:function(){
+    fullName:function(){   
         return this.firstName +" "+this.lastName;
     }
 }
