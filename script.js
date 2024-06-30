@@ -306,9 +306,22 @@ const prsn4= {
 const ok3 =prsn0.fullName.call(prsn4,"chadput","e ");
 console.log(ok3);
 
+// class in js 
+class Car {
+    constructor(name,year){
+        this.name=name;
+        this.year=year;
+    }
 
+    age(){
+        const date = new Date();
+        return date.getFullYear()-this.year;
+    }
+}
 
-
+const mycar = new Car("ford",2014);
+document.getElementById("demo8").innerHTML=
+"my car is "+mycar.age()+ " year old.";
 
 
 
