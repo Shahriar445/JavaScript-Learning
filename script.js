@@ -120,3 +120,200 @@ console.log(s7.match("trim"));
 let str = "this is test for some operation "
 
 console.log(str.matchAll("is")); //The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).
+let x =100/"apple"
+
+console.log(x);
+let mynumber =2;
+while (mynumber != Infinity){
+    mynumber =mynumber * mynumber;
+}
+
+let xy= "34";
+let y = Number(xy)+2;
+console.log(y);
+
+//array 
+
+let arr = ["amo", "mamo","khalo"];
+console.log(typeof arr);  
+let str2=arr.toString(); // converting array to string 
+console.log(str2);
+let t="";
+for (let i =0 ;i<arr.length;i++){
+    t+=arr[i]+" ";
+}
+
+
+console.log(t);
+
+
+const number= [23,2323,2323,232,34];
+
+const over19 = number.filter(myfunction);
+function myfunction (value)
+{
+    return value > 500;
+}
+console.log(over19);
+
+const d = new Date();
+console.log(d.toDateString());
+console.log(d.toUTCString());
+console.log(d.toISOString());
+
+// switch 
+
+switch (new Date().getDay()){
+    case 0:
+        day ="Sunday";
+        break;
+    case 1:
+            day ="Monday";
+            break;
+    case 2:
+        day ="tuesday";
+        break;
+    case 3:
+        day ="Wednessday";
+        break;
+    case 4:
+        day ="Thursday";
+    case 5:
+        day ="Friday";
+        break;
+    case 6:
+        day ="Saturday";
+        break;
+}
+console.log(day);
+
+// api
+
+const xyz =document.getElementById("location");
+function getlocation()
+{
+    if (navigator.geolocation){
+        navigator.geolocation.watchPosition(showPosition);
+    }else{
+        xyz.innerHTML="geo location is no supported by this browser";
+
+    }
+
+
+
+}
+function showPosition(position)
+{
+    xyz.innerHTML="Latitude: "+position.coords.latitude+
+    "<br>Longitude : "+ position.coords.longitude;
+
+}
+const person5 = {
+    Name: "shipon",
+    age : 23,
+    rool : 2232323
+};
+
+document.getElementById("t2").innerHTML=Object.getOwnPropertyNames(person5);
+
+const person6= {
+    firstName:"Johan",
+    lastName:"doe",
+    age:34,
+    language:"bd",
+    get lang(){
+        return this.language.toUpperCase();
+    }
+
+};
+
+// document.getElementById("demo4").innerHTML=person6.lang;
+console.log(Object.isFrozen(person6));
+
+
+// function 
+const x2= function (a,b ){
+    return a*b;
+}
+let z = x2(4,2);
+console.log(z);
+
+
+// default parameters 
+function myfuncation (x,y)
+{
+    if (y===undefined)
+        {
+            y=2;
+            return x*y;   
+     }
+}
+document.getElementById("demo4").innerHTML=myfuncation(4);
+//default parameter value 
+function myfuncation2(x,y=12)
+{
+    return  x*y;
+}
+let xy2=myfuncation2(2);
+console.log(xy2);
+
+// funcatin rest parameter 
+
+function sum(...args){
+    let sum =0 ;
+    for (let i of args){
+        sum+=i;
+    
+    }
+    return sum;
+}
+let x34= sum(2,3,4,5,6);// as you want pass parameter 
+console.log(x34)
+
+
+
+const prsn={
+    fullName:function(){
+        return this.firstName +" "+this.lastName;
+    }
+}
+
+const prsn1= {
+    firstName:"johan",
+    lastName:"doe"
+}
+const prsn2= {
+    firstName:"test",
+    lastName:"doe"
+}
+
+let ok = prsn.fullName.call(prsn1);
+let ok2 = prsn.fullName.call(prsn2);
+console.log(ok);
+console.log(ok2);
+
+// call method accept argument 
+const prsn0 ={
+    fullName:function(city,county){
+        return this.firstName +" "+city +"  country:  "+ county;
+    }
+}
+const prsn4= {
+    firstName:"johan d",
+    lastName:"doe"
+}
+const ok3 =prsn0.fullName.call(prsn4,"chadput","e ");
+console.log(ok3);
+
+
+
+
+
+
+
+
+
+
+
+
+
