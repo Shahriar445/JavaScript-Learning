@@ -64,6 +64,13 @@ const persons = {
     }
 
 
+const test = {
+    name : "ok",
+    age: 34,
+    rool : 2323
+};
+
+console.log(test);
   // Display Properties
   document.getElementById("demo").innerHTML = view;
 
@@ -83,4 +90,33 @@ const persons = {
 
   const myfather=new PersonCons("jon","doer",34,"blue");
   const mymother = new PersonCons("sa","fal",30  )
-  document.getElementById("test2").innerHTML=myf;
+  document.getElementById("test2").innerHTML=myfather;
+// string 
+  let s = "hey this is not fun";
+  let s2 = s.slice(0,2);
+  let s3=s.substring(0,4);
+  console.log(s2);
+  console.log(s3);
+
+  let text = `the quick brown fox jumps over the lazy dog`;
+  console.log(text);
+  let s5= "to dhisf";
+  let s6= "THER ARE NO NO";
+  console.log(s5.toUpperCase());
+  console.log(s6.toLowerCase());
+
+  let s7 ="   white space remove using   trim ";
+
+  console.log(s7.trim());
+
+  let tex = "please visit me";
+let rep = tex.replace("me","you");
+console.log(rep);
+console.log(s7.search("using"));
+console.log(s7.match("trim"));
+
+
+//example string 
+let str = "this is test for some operation "
+
+console.log(str.matchAll("is")); //The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).
